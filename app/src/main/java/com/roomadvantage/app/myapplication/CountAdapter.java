@@ -90,6 +90,7 @@ public class CountAdapter extends RecyclerView.Adapter<CountAdapter.ViewHolder> 
                     } else {
                         milliSec = -1L;
                         mTimeText.stop();
+                        mTimeText.setText("00:00");
                     }
                     mCountUpList.set(getAdapterPosition(), milliSec);
                     break;
